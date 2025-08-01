@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.runtime.android)
     implementation(libs.androidx.navigation.compose.android)
+    implementation(libs.androidx.runtime.livedata)
 
     kapt(libs.androidx.room.compiler)
     implementation(libs.androidx.room.runtime)

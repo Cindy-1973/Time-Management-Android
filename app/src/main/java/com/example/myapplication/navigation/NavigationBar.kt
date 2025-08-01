@@ -29,7 +29,7 @@ fun AppNavigationBar(modifier: Modifier = Modifier) {
                     NavigationBarItem(
                         selected = selectedDestination == index,
                         onClick = {
-                            navController.navigate(route = destination.route)
+                            navController.navigate(route = "edit/{id}")
                             selectedDestination = index
                         },
                         icon = {
