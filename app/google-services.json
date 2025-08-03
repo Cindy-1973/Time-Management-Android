@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "69728600260",
+    "project_id": "time-management-5c46c",
+    "storage_bucket": "time-management-5c46c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69728600260:android:71d2e7a9eb6cf1da954991",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHymkH49VhUgvyy83w1neaVR3qnQaUy8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
