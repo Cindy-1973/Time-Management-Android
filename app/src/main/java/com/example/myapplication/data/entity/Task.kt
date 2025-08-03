@@ -12,8 +12,8 @@ import androidx.room.PrimaryKey
 data class Task(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val title: String,
-    val isImportant: String = "yes",
-    val isUrgent: String = "yes",
+    val isImportant: String = "",
+    val isUrgent: String = "",
     val location: String = "",
     val startDate: String = "",
     val dueDate: String = "",

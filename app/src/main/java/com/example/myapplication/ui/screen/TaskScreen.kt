@@ -140,6 +140,8 @@ fun TaskScreen(
                             dueDate = dueDate,
                             description = description
                         )
+                        println(isUrgent)
+                        println(isImportant)
                         viewModel.addNewTask(task)
                         title = ""
                         isImportant = ""

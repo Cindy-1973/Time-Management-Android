@@ -61,11 +61,20 @@ fun ListScreen(
                     Column(
                         modifier = Modifier
                             .weight(1f)
-                            .clickable { onTaskSelected(task.id) } // 整个内容可点进 detail
+                            .clickable { onTaskSelected(task.id) }
                     ) {
                         Text(text = task.title, style = MaterialTheme.typography.titleMedium)
-                        if (task.description.isNotBlank()) {
-                            Text(text = task.description, style = MaterialTheme.typography.bodySmall)
+                        if (task.isUrgent == "Yes" && task.isImportant == "No") {
+                            Text(text = "Urgent but not important", style = MaterialTheme.typography.bodySmall)
+                        }
+                        else  if (task.isUrgent == "Yes" && task.isImportant == "Yes") {
+                            Text(text = "Urgent and important", style = MaterialTheme.typography.bodySmall)
+                        }
+                        else  if (task.isUrgent == "No" && task.isImportant == "Yes") {
+                            Text(text = "Important but not urgent", style = MaterialTheme.typography.bodySmall)
+                        }
+                        else  if (task.isUrgent == "No" && task.isImportant == "No") {
+                            Text(text = "Not important and urgent", style = MaterialTheme.typography.bodySmall)
                         }
                     }
                     IconButton(onClick = {
